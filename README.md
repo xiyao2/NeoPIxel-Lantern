@@ -11,7 +11,7 @@ The lantern uses a **NeoPixel LED strip** controlled by an **ESP32 microcontroll
 ## 📌 State Diagram  
 Below is the state diagram representing the interactive behavior of the lantern:  
 
-![State Diagram](state-diagram-example.jpg)  
+<img width="635" alt="截屏2025-02-27 下午11 16 41" src="https://github.com/user-attachments/assets/31489e0e-83a9-4b0a-989d-0391144c46fe" /> 
 
 ## 📌 Hardware  
 The following hardware components were used in this project:  
@@ -30,9 +30,11 @@ The firmware detects the **copper tape input** and controls the LED strip accord
 ### **Features**  
 ✅ Detects the copper tape input (HIGH = lifted, LOW = placed down)  
 ✅ Cycles through predefined colors **(Red, Yellow, Green, Purple, Blue)**  
-✅ Plays a **dynamic rainbow effect** when selected  
+✅ Plays a **dynamic rainbow effect**   
 ✅ Includes **breathing and wave effects** for smooth transitions  
 ✅ **Instantly stops animation and changes colors when lifted**  
+
+https://github.com/user-attachments/assets/283eecd3-9bdd-4955-8e44-0da056249868
 
 ### **Code Snippet**
 ```python
@@ -62,3 +64,9 @@ while True:
         np.fill(COLORS[color_index] if COLORS[color_index] != "rainbow" else (255, 255, 255))
         np.write()
     button_last_state = button.value()
+
+
+
+
+
+
